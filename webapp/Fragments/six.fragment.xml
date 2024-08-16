@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog class="noDataForm sapUiSizeCompact" title="{i18n>StudentDetails}" contentHeight="80%">
+		<SearchField liveChange="searchfield6"/>
+		<List id="listitems6" items="{/}" mode="MultiSelect"   headerText="ProductName">
+			<StandardListItem title="{ProductName}"></StandardListItem>
+		</List>
+		<buttons>
+			<Button text="OK" type="Accept" press="save6"/>
+			<Button text="Cancel" type="Reject" press="close6"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

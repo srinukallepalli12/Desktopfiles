@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="settings" title="Select Product">
+		<HBox>
+			<CheckBox text="Select All" select="selectall"/>
+		</HBox>
+		<List id="myList" mode="MultiSelect" items="{/}">
+			<items>
+				<StandardListItem title="{}" type="Active"/>
+			</items>
+		</List>
+		<buttons>
+			<Button text="OK" type="Accept" press="settingssave"/>
+			<Button text="Cancel" type="Reject" press="settingsclose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
+<!--<List id="list8" items="{/}" mode="MultiSelect" >-->
+<!--	<Text text="CustomerName"/>-->
+<!--	<Text text="Salesperson"/>-->
+<!--<StandardListItem title="{Quantity}"></StandardListItem>-->
+<!--</List>-->
+<!--<buttons>-->
+<!--	<Button text="OK" type="Accept" press="save8"/>-->
+<!--	<Button text="Cancel" type="Reject" press="close8"/>-->
+<!--</buttons>-->
+<!--<Dialog id="frag8" class="noDataForm sapUiSizeCompact" title="{i18n>StudentDetails}" contentHeight="80%"></Dialog>-->
+<!--<SelectDialog id="setiings"  multiSelect="true" title="Select Product">-->
+<!--<ListBase></ListBase>-->
+<!--</SelectDialog>-->

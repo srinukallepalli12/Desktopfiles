@@ -1,0 +1,81 @@
+<mvc:View controllerName="zInvoiceCustomzInvoiceCustom.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<Panel class="center">
+					<ToolbarSpacer></ToolbarSpacer>
+					<Button type="Accept" text="Go" press="ongoto"/>
+					<!--<MultiInput id="id_mi_plant"  width="500px" tokenUpdate="onTokenUpdate" showValueHelp="true" valueHelpOnly="true"-->
+					<!--	valueHelpRequest="onHandleValuehelp"></MultiInput>-->
+					<Button press="settings" icon="sap-icon://action-settings"/>
+				</Panel>
+				<Panel>
+					<HBox>
+						<Input id="one" placeholder="CustomerName" showValueHelp="true" valueHelpRequest="ProductValueHelp1"/>
+						<Input id="two" placeholder="SalesPerson" showValueHelp="true" valueHelpRequest="ProductValueHelp2"/>
+						<Input id="three" placeholder="OrderID" showValueHelp="true" valueHelpRequest="ProductValueHelp3"/>
+						<Input id="four" placeholder="ShipperName" showValueHelp="true" valueHelpRequest="ProductValueHelp4"/>
+						<Input id="five" placeholder="ProductID" showValueHelp="true" valueHelpRequest="ProductValueHelp5"/>
+					</HBox>
+					<HBox>
+						<Input id="six" placeholder="ProductName" showValueHelp="true" valueHelpRequest="ProductValueHelp6"/>
+						<Input id="seven" placeholder="UnitPrice" showValueHelp="true" valueHelpRequest="ProductValueHelp7"/>
+						<Input id="eight" placeholder="Quantity" showValueHelp="true" valueHelpRequest="ProductValueHelp8"/>
+						<Input id="nine" placeholder="Discount" showValueHelp="true" valueHelpRequest="ProductValueHelp9"/>
+					</HBox>
+				</Panel>
+				<Table id="table" items="{/}">
+					<columns>
+						<Column>
+							<Label text="CustomerName"/>
+						</Column>
+						<Column>
+							<Label text="Salesperson"/>
+						</Column>
+						<Column>
+							<Label text="OrderID"/>
+						</Column>
+						<Column>
+							<Label text="ShipperName"/>
+						</Column>
+						<Column>
+							<Label text="ProductID"/>
+						</Column>
+						<Column>
+							<Label text="ProductName"/>
+						</Column>
+						<Column>
+							<Label text="UnitPrice"/>
+						</Column>
+						<Column>
+							<Label text="Quantity"/>
+						</Column>
+						<Column>
+							<Label text="Discount"/>
+						</Column>
+						<Column>
+							<Label text="ShipName"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<Text text="{CustomerName}"/>
+								<Text text="{Salesperson}"/>
+								<Text text="{OrderID}"/>
+								<Text text="{ShipperName}"/>
+								<Text text="{ProductID}"/>
+								<Text text="{ProductName}"/>
+								<Text text="{UnitPrice}"/>
+								<Text text="{Quantity}"/>
+								<Text text="{Discount}"/>
+								<Text text="{ShipName}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

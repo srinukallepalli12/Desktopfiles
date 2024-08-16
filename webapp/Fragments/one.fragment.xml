@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Dialog id="frag1" contentHeight="80%">
+		<SearchField liveChange="searchfield1"/>
+		<List id="listitems1" items="{/}" mode="MultiSelect" headerText="CustomerName">
+			<StandardListItem title="{CustomerName}"></StandardListItem>
+		</List>
+		<buttons>
+			<Button text="OK" type="Accept" press="save1"/>
+			<Button text="Cancel" type="Reject" press="close1"/>
+		</buttons>
+	</Dialog>
+	<!--<SelectDialog id="srinu" title="Products">-->
+	<!--<List id="list1" items="{/}" mode="SingleSelectMaster" headerText="CustomerName">-->-->
+	<!--		<StandardListItem type="Active" title="{CustomerName}"></StandardListItem>-->
+	<!--</List>-->
+	<!--</SelectDialog>-->
+</core:FragmentDefinition>
