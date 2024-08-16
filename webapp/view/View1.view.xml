@@ -9,6 +9,7 @@
 					<!--<MultiInput id="id_mi_plant"  width="500px" tokenUpdate="onTokenUpdate" showValueHelp="true" valueHelpOnly="true"-->
 					<!--	valueHelpRequest="onHandleValuehelp"></MultiInput>-->
 					<Button press="settings" icon="sap-icon://action-settings"/>
+					<Button id="JS" text="JS" press="JS"/>
 				</Panel>
 				<Panel>
 					<HBox>
